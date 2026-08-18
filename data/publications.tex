@@ -1,0 +1,16 @@
+\ifdefined\withunpublished{}
+In press or under review journal articles:
+\begin{etaremune}
+\input{data/preprints}
+\end{etaremune}
+Published journal articles:
+\else\fi
+\begin{etaremune}
+\input{data/papers}
+\end{etaremune}
+\ifdefined\withnonpapers{}
+Other publications (e.g, software, conference abstracts):
+\begin{etaremune}
+\input{data/nonpapers}
+\end{etaremune}
+\else\fi
